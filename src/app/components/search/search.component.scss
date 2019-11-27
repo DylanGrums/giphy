@@ -1,0 +1,23 @@
+.card {
+    width: 1200px;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+}
+
+.example-card {
+    max-width: 100px;
+    background-color: white;    
+}
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 200px;
+    height: auto;
+}

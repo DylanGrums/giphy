@@ -1,1 +1,14 @@
-<p>search works!</p>
+<mat-card class="card">
+    <mat-form-field appearance='outline' class="example-full-width">
+        <mat-label>Search</mat-label>
+        <input matInput #searchInput placeholder="Search..." type="text" />
+    </mat-form-field>
+
+    <div class="grid">
+        <mat-progress-bar mode="indeterminate" style="margin-bottom: 20px;" *ngIf="isSearching"></mat-progress-bar>
+        
+        <img class="img" *ngFor="let giph of giphs" mat-card-image src="{{giph.images.original.url}}"
+            alt="Photo of a Shiba Inu">
+    </div>
+
+</mat-card>
